@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas - Productividad Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header class="encabezado">
+            <h1>📋 Gestor de Tareas</h1>
+            <p class="subtitulo">Organiza tus actividades diarias</p>
+        </header>
+
+        <div class="seccion-estadisticas">
+            <div class="estadistica">
+                <span class="label">Total de Tareas:</span>
+                <h2 id="contadorTotal" class="numero">0</h2>
+            </div>
+            <div class="estadistica">
+                <span class="label">Completadas:</span>
+                <h2 id="contadorCompletadas" class="numero">0</h2>
+            </div>
+        </div>
+
+        <form id="formularioTareas" class="formulario-principal">
+            <div class="grupo-entrada">
+                <input type="text" id="entradaTarea" class="entrada-tarea" placeholder="Agrega una nueva tarea..." autocomplete="off">
+                <button id="botonAgregarTarea" type="submit" class="boton-agregar">+ Agregar</button>
+            </div>
+        </form>
+
+        <div class="contenedor-lista">
+            <h3>Mis Tareas</h3>
+            <ul id="listaTareas" class="lista-tareas"></ul>
+            <div id="mensajeVacio" class="mensaje-vacio">
+                <p>✓ ¡No hay tareas! Descansa un poco.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
